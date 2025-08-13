@@ -109,6 +109,10 @@ a {
   text-decoration: none;
   color: var(--color-gray);
 }
+a.primary{
+  text-decoration: none;
+  color: var(--color-primary-dark);
+}
 
 main {
   overflow: hidden;
@@ -187,7 +191,7 @@ body {
 }
 
 .section {
-  padding: 12rem 0;
+  padding: 6rem 0;
 }
 
 .section-bg {
@@ -195,7 +199,6 @@ body {
 }
 
 .section__header {
-  max-width: 50rem;
   margin: auto;
   text-align: center;
   padding-bottom: 5rem;
@@ -208,7 +211,7 @@ body {
 
 .section__subtitle {
   font-weight: var(--fw-bold);
-  font-size: var(--fs-md);
+  font-size: var(--fs-lg);
   color: var(--color-primary);
 }
 
@@ -235,9 +238,21 @@ body {
 .btn--primary {
   background-color: var(--color-primary);
 }
+.btn--secondary {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary)
+}
 
 .btn--primary:hover {
   background-color: var(--color-primary-dark);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row; 
+  gap: 10px;
+  flex-wrap: wrap;     
 }
 
 /* Header
@@ -296,7 +311,7 @@ body {
   color: var(--color-primary);
 }
 
-/* Mobile menu */
+
 @media screen and (max-width: 968px) {
   .nav__menu {
     background-color: var(--color-white);
@@ -310,6 +325,11 @@ body {
     justify-content: center;
     align-items: center;
     transition: var(--transition);
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: center; 
   }
 
   .nav__menu--open {
@@ -352,6 +372,9 @@ body {
 }
 .home__img{
   width: 70%;
+}
+.banner__img{
+  width: 100%;
 }
 .home__content {
   max-width: 50rem;
@@ -424,7 +447,6 @@ body {
 }
 
 .about__description {
-  margin-bottom: 2rem;
   font-size: 22px;
 }
 
@@ -433,9 +455,6 @@ body {
   width: 70%;
 }
 
-/* Skills
---------------------------------------------------------------*/
-/*  */
 
 /* Portfolio
 --------------------------------------------------------------*/
@@ -649,6 +668,12 @@ body {
   color: var(--color-gray-light);
 }
 
+/*problem section*/
+.problem-section{
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
 /* ScrollTop
 --------------------------------------------------------------*/
 .scrolltop {
@@ -736,10 +761,6 @@ body {
     order: -1;
   }
 
-  .skills__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .counter__wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -805,23 +826,6 @@ body {
     transform: scaleX(1);
   }
 
-  .service__wrapper {
-    grid-template-columns: repeat(2, 3fr);
-    align-items: center;
-  }
-
-  .service__content {
-    text-align: initial;
-  }
-
-  .service__card {
-    flex-direction: initial;
-    align-items: center;
-  }
-
-  .service__card:nth-child(2) {
-    margin-right: -4rem;
-  }
 
   .portfolio__wrapper {
     grid-template-columns: repeat(3, 1fr);
