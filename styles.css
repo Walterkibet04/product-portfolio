@@ -468,6 +468,7 @@ body {
   background: #fff;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
 .portfolio__project {
