@@ -461,6 +461,15 @@ body {
 .portfolio__wrapper{
   margin-bottom: 20px;
 }
+.portfolio__item {
+  border: 1px solid #ddd;
+  border-radius: var(--b-radius);
+  overflow: hidden; /* ensures button and image align with border */
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
 .portfolio__project {
   position: relative;
   width: 100%;
@@ -489,27 +498,6 @@ body {
   color: var(--color-white);
 }
 
-.portfolio__link {
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  width: 5rem;
-  height: 5rem;
-  background-color: var(--color-white);
-  color: var(--color-title);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.2rem;
-  transition: var(--transition);
-}
-
-.portfolio__link:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-}
-
 .portfolio__overlay {
   background-color: var(--color-secondary);
   opacity: 0;
@@ -520,6 +508,26 @@ body {
   bottom: 0;
   transition: var(--transition);
 }
+.portfolio__btn {
+  display: block;
+  width: calc(100% - 2rem); /* leaves spacing inside card */
+  margin: 1rem auto;        /* spacing from content */
+  padding: 1.2rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  text-align: center;
+  border-radius: var(--b-radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.portfolio__btn:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
 
 .portfolio__project:hover .portfolio__overlay {
   opacity: 0.8;
@@ -527,10 +535,6 @@ body {
 
 .portfolio__project:hover .portfolio__info {
   bottom: 0;
-}
-
-.portfolio__project:hover .portfolio__link {
-  right: 2rem;
 }
 
 /* Contact
@@ -547,7 +551,6 @@ body {
   display: block;
   margin-bottom: 1rem;
 }
-
 .form__input {
   background-color: var(--color-white);
   box-shadow: var(--shadow-primary);
