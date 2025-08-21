@@ -464,11 +464,10 @@ body {
 .portfolio__item {
   border: 1px solid #ddd;
   border-radius: var(--b-radius);
-  overflow: hidden; /* ensures button and image align with border */
+  overflow: hidden;
   background: #fff;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
 .portfolio__project {
@@ -511,8 +510,8 @@ body {
 }
 .portfolio__btn {
   display: block;
-  width: calc(100% - 2rem); /* leaves spacing inside card */
-  margin: 1rem auto;        /* spacing from content */
+  width: calc(100% - 2rem);
+  margin: 1rem auto;       
   padding: 1.2rem;
   background-color: var(--color-primary);
   color: #fff;
