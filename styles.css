@@ -467,8 +467,7 @@ body {
   overflow: hidden; /* ensures button and image align with border */
   background: #fff;
   transition: box-shadow 0.3s ease;
-  /* box-shadow: 0 4px 20px rgba(0,0,0,0.06); */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
 
 .portfolio__project {
@@ -514,24 +513,16 @@ body {
   width: calc(100% - 2rem); /* leaves spacing inside card */
   margin: 1rem auto;        /* spacing from content */
   padding: 1.2rem;
-  background-color: var(--color-white);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
   font-weight: var(--fw-semibold);
   text-decoration: none;
   text-align: center;
   border-radius: var(--b-radius);
-  border: 1px solid var(--color-primary);
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
-/* .btn--secondary {
-  background-color: var(--color-primary);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary)
-} */
 
 .portfolio__btn:hover {
   background-color: var(--color-primary-dark);
