@@ -20,7 +20,7 @@ window.onload = function() {
     if (!localStorage.getItem("welcomePopupShown")) {
         Swal.fire({
             title: 'Welcome!',
-            text: 'Let me make your users smile — see how I do it😊',
+            text: 'The portfolio you’ve been looking for😊',
             icon: 'success',
             confirmButtonText: 'Continue',
             customClass: { 
