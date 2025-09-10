@@ -839,3 +839,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+button.btn--primary.swal2-confirm {
+  font-size: 16px;    
+  font-weight: var(--fw-medium); 
+  letter-spacing: 0.5px;
+}
