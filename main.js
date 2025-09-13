@@ -15,14 +15,16 @@ navLinks.forEach((link) => {
 });
 
 // This will show an alert when the page loads
+// Let me make your users smile — see how I do it
 window.onload = function() {
     // Check if popup was already shown
     if (!localStorage.getItem("welcomePopupShown")) {
         Swal.fire({
             title: 'Welcome!',
-            text: 'Let me make your users smile — see how I do it😊',
+            text: 'Make sure to open one of the case studies & read the beautiful story of design😊',
             icon: 'success',
             confirmButtonText: 'Continue',
+            width: 'auto',
             customClass: { 
               title: 'section__subtitle',
               confirmButton: 'btn btn--primary',
