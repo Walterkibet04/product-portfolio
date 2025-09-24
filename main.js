@@ -21,7 +21,7 @@ window.onload = function() {
     if (!localStorage.getItem("welcomePopupShown")) {
         Swal.fire({
             title: 'Welcome!',
-            text: 'Make sure you open one of the case studies & read the beautiful story of design😊',
+            text: 'Let me make your users smile😊, see how I do it.',
             icon: 'success',
             confirmButtonText: 'Continue',
             width: 'auto',
