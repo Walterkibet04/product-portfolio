@@ -847,10 +847,10 @@ button.btn--primary.swal2-confirm {
 }
 
 .is-disabled {
-  pointer-events: none;          /* Makes it unclickable           */
-  background-color: #d1d5db;     /* Light gray (universal disabled)*/
-  color: #6b7280 !important;     /* Darker gray for text           */
-  border-color: #d1d5db;         /* Match background               */
-  opacity: 1.0;                  /* Slight fade                    */
-  cursor: not-allowed;           /* Universal "disabled" cursor    */
+  pointer-events: none;       
+  background-color: #d1d5db;     
+  color: #6b7280 !important;    
+  border-color: #d1d5db;        
+  opacity: 1.0;                  
+  cursor: not-allowed;           
 }
