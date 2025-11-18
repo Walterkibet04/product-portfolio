@@ -845,3 +845,12 @@ button.btn--primary.swal2-confirm {
   font-weight: var(--fw-medium); 
   letter-spacing: 0.5px;
 }
+
+.is-disabled {
+  pointer-events: none;          /* Makes it unclickable           */
+  background-color: #d1d5db;     /* Light gray (universal disabled)*/
+  color: #6b7280 !important;     /* Darker gray for text           */
+  border-color: #d1d5db;         /* Match background               */
+  opacity: 1.0;                  /* Slight fade                    */
+  cursor: not-allowed;           /* Universal "disabled" cursor    */
+}
