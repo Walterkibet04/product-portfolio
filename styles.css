@@ -274,7 +274,7 @@ body {
 /* Header
 --------------------------------------------------------------*/
 .header {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-lighten);
   box-shadow: var(--shadow-header);
   position: fixed;
   top: 0;
@@ -436,13 +436,26 @@ body {
   align-items: center;
   transition: var(--transition);
   color: var(--color-primary);
-  box-shadow: inset 5px 5px 5px -1px rgba(10, 99, 169, 0.16), 
-               inset -10px -10px 10px -1px rgba(255, 255, 255, 1);
 }
-
-.social__link:hover {
-   box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16), 
+.social__link_home{
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  color: var(--color-primary);
+  box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16), 
                -10px -10px 10px -1px rgba(255, 255, 255, 1);
+}
+.social__link_home:hover {
+   box-shadow: inset 5px 5px 5px -1px rgba(10, 99, 169, 0.16), 
+               inset -10px -10px 10px -1px rgba(255, 255, 255, 1);
+  color: var(--color-primary-dark);
+}
+.social__link{
   color: var(--color-primary-dark);
 }
 
