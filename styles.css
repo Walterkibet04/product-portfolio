@@ -503,8 +503,9 @@ body {
   border: 1px solid #ddd;
   border-radius: var(--b-radius);
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: var(--color-white);
+  box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.05), 
+              -5px -5px 5px -1px rgba(10, 99, 169, 0.05);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -557,7 +558,7 @@ body {
   text-decoration: none;
   text-align: center;
   border-radius: var(--b-radius);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  /* box-shadow: 0 4px 10px rgba(0,0,0,0.12); */
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -565,7 +566,7 @@ body {
 .portfolio__btn:hover {
   background-color: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+  /* box-shadow: 0 6px 14px rgba(0,0,0,0.18); */
 }
 
 .portfolio__project:hover .portfolio__overlay {
