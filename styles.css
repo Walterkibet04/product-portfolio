@@ -389,6 +389,11 @@ body {
 .home__img{
   width: 70%;
 }
+.hero_img{
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16), 
+               -5px -5px 5px -1px rgba(10, 99, 169, 0.16);
+}
 .banner__img{
   width: 100%;
 }
