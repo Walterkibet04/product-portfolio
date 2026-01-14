@@ -15,26 +15,26 @@ navLinks.forEach((link) => {
 });
 
 // This will show an alert when the page loads
-// window.onload = function() {
-//     // Check if popup was already shown
-//     if (!localStorage.getItem("welcomePopupShown")) {
-//         Swal.fire({
-//             title: 'Welcome!',
-//             text: 'Let me make your users smile😊, see how I do it.',
-//             icon: 'success',
-//             confirmButtonText: 'Continue',
-//             width: 'auto',
-//             customClass: { 
-//               title: 'section__subtitle',
-//               confirmButton: 'btn btn--primary',
-//               htmlContainer: 'about__description'
-//             }
-//         }).then(() => {
-//             // Save flag so it won't show again
-//             localStorage.setItem("welcomePopupShown", "true");
-//         });
-//     }
-// };
+window.onload = function() {
+    // Check if popup was already shown
+    if (!localStorage.getItem("welcomePopupShown")) {
+        Swal.fire({
+            title: 'Welcome!',
+            text: 'Click View Project to explore the case study and Figma designs.',
+            icon: 'success',
+            confirmButtonText: 'Continue',
+            width: 'auto',
+            customClass: { 
+              title: 'section__subtitle',
+              confirmButton: 'btn btn--primary',
+              htmlContainer: 'about__description'
+            }
+        }).then(() => {
+            // Save flag so it won't show again
+            localStorage.setItem("welcomePopupShown", "true");
+        });
+    }
+};
 
 // change the nav toggle icon
 function changeToggleIcon() {
