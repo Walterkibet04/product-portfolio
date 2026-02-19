@@ -22,7 +22,7 @@ window.onload = function() {
             title: 'Welcome!',
             text: 'Figma links are not available in some case studies because of NDA',
             icon: 'success',
-            confirmButtonText: 'Continue',
+            confirmButtonText: 'Close',
             width: 'auto',
             customClass: { 
               title: 'section__subtitle',
