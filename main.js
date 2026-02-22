@@ -19,8 +19,8 @@ window.onload = function () {
   // Check if popup was already shown
   if (!localStorage.getItem("welcomePopupShown")) {
     Swal.fire({
-      title: 'Welcome!',
-      text: 'Figma links are not available in some case studies because of NDAs',
+      title: 'Welcome 🤝',
+      text: 'Note: Figma links are not available in some case studies because of NDAs',
       icon: 'success',
       confirmButtonText: 'Close',
       width: 'auto',
