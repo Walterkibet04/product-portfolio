@@ -15,50 +15,50 @@ navLinks.forEach((link) => {
 });
 
 // This will show an alert when the page loads
-window.onload = function () {
-  // Check if popup was already shown
-  if (!localStorage.getItem("welcomePopupShown")) {
-    Swal.fire({
-      title: 'Welcome 🤝',
-      text: 'Note: Figma links are not available in some case studies because of NDAs',
-      icon: 'success',
-      confirmButtonText: 'Close',
-      width: 'auto',
-      customClass: { 
-        title: 'section__subtitle',
-        confirmButton: 'btn btn--primary',
-        htmlContainer: 'about__description'
-      },
+// window.onload = function () {
+//   // Check if popup was already shown
+//   if (!localStorage.getItem("welcomePopupShown")) {
+//     Swal.fire({
+//       title: 'Welcome 🤝',
+//       text: 'Note: Figma links are not available in some case studies because of NDAs',
+//       icon: 'success',
+//       confirmButtonText: 'Close',
+//       width: 'auto',
+//       customClass: { 
+//         title: 'section__subtitle',
+//         confirmButton: 'btn btn--primary',
+//         htmlContainer: 'about__description'
+//       },
 
-      didOpen: () => {
-        const icon = Swal.getIcon();
-        const btn = Swal.getConfirmButton();
+//       didOpen: () => {
+//         const icon = Swal.getIcon();
+//         const btn = Swal.getConfirmButton();
 
-        if (btn) {
-          btn.style.border = 'none';
-          btn.style.outline = 'none';
-          btn.style.boxShadow = 'none';
-        }
-        if (!icon) return;
+//         if (btn) {
+//           btn.style.border = 'none';
+//           btn.style.outline = 'none';
+//           btn.style.boxShadow = 'none';
+//         }
+//         if (!icon) return;
 
-        // Make the circle solid green
-        const ring = icon.querySelector('.swal2-success-ring');
-        if (ring) {
-          ring.style.borderColor = '#4CAF50';
-        }
+//         // Make the circle solid green
+//         const ring = icon.querySelector('.swal2-success-ring');
+//         if (ring) {
+//           ring.style.borderColor = '#4CAF50';
+//         }
 
-        // Make checkmark solid green
-        const check = icon.querySelector('.swal2-success-line-tip');
-        const check2 = icon.querySelector('.swal2-success-line-long');
+//         // Make checkmark solid green
+//         const check = icon.querySelector('.swal2-success-line-tip');
+//         const check2 = icon.querySelector('.swal2-success-line-long');
 
-        if (check) check.style.backgroundColor = '#4CAF50';
-        if (check2) check2.style.backgroundColor = '#4CAF50';
-      }
-    }).then(() => {
-      localStorage.setItem("welcomePopupShown", "true");
-    });
-  }
-};
+//         if (check) check.style.backgroundColor = '#4CAF50';
+//         if (check2) check2.style.backgroundColor = '#4CAF50';
+//       }
+//     }).then(() => {
+//       localStorage.setItem("welcomePopupShown", "true");
+//     });
+//   }
+// };
 
 // change the nav toggle icon
 function changeToggleIcon() {
