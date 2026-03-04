@@ -16,48 +16,44 @@ navLinks.forEach((link) => {
 
 // This will show an alert when the page loads
 window.onload = function () {
-  // Check if popup was already shown
-  if (!localStorage.getItem("welcomePopupShown")) {
-    Swal.fire({
-      title: 'Welcome 🤝',
-      text: 'Note: Figma links are not available in some case studies because of NDAs',
-      icon: 'success',
-      confirmButtonText: 'Close',
-      width: 'auto',
-      customClass: { 
-        title: 'section__subtitle',
-        confirmButton: 'btn btn--primary',
-        htmlContainer: 'about__description'
-      },
 
-      didOpen: () => {
-        const icon = Swal.getIcon();
-        const btn = Swal.getConfirmButton();
+  const path = window.location.pathname;
+  // ✅ List ONLY the case studies you want the popup to appear on
+  const allowedCaseStudies = [
+    "/projects/currency-exchange/", 
+    // "/projects/telehealth/index.html",
+  ];
 
-        if (btn) {
-          btn.style.border = 'none';
-          btn.style.outline = 'none';
-          btn.style.boxShadow = 'none';
-        }
-        if (!icon) return;
+  // ❌ Stop if current page is not in the allowed list
+  if (!allowedCaseStudies.includes(path)) return;
 
-        // Make the circle solid green
-        const ring = icon.querySelector('.swal2-success-ring');
-        if (ring) {
-          ring.style.borderColor = '#4CAF50';
-        }
+  // ❌ Stop if popup already shown
+  if (localStorage.getItem("welcomePopupShown")) return;
 
-        // Make checkmark solid green
-        const check = icon.querySelector('.swal2-success-line-tip');
-        const check2 = icon.querySelector('.swal2-success-line-long');
+  Swal.fire({
+    title: 'Welcome 🤝',
+    text: 'Note: Figma link is not available in this case study because of NDA. Just read case study',
+    confirmButtonText: 'Ok Got it',
+    width: 'auto',
+    customClass: { 
+      title: 'section__subtitle',
+      confirmButton: 'btn btn--primary',
+      htmlContainer: 'about__description'
+    },
 
-        if (check) check.style.backgroundColor = '#4CAF50';
-        if (check2) check2.style.backgroundColor = '#4CAF50';
+    didOpen: () => {
+      const btn = Swal.getConfirmButton();
+
+      if (btn) {
+        btn.style.border = 'none';
+        btn.style.outline = 'none';
+        btn.style.boxShadow = 'none';
       }
-    }).then(() => {
-      localStorage.setItem("welcomePopupShown", "true");
-    });
-  }
+
+    }
+  }).then(() => {
+    localStorage.setItem("welcomePopupShown", "true");
+  });
 };
 
 // change the nav toggle icon
