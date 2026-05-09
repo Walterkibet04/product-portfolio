@@ -32,7 +32,7 @@ window.onload = function () {
 
   Swal.fire({
     title: 'Welcome 🤝',
-    text: 'Note: Figma link is not available in this case study because of NDA. Just read case study',
+    text: 'Note: Figma link is not available in this case study because of NDA',
     confirmButtonText: 'Ok Got it',
     width: 'auto',
     customClass: { 
