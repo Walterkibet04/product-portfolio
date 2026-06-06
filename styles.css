@@ -893,3 +893,148 @@ button.btn--primary.swal2-confirm {
   opacity: 1.0;                  
   cursor: not-allowed;           
 }
+
+
+/* Recruiter Cookie Banner
+--------------------------------------------------------------*/
+/* .cookie-banner {
+    position: fixed;
+    bottom: 2.4rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(120px);
+    width: min(92vw, 58rem);
+    background: #0f0f0f;
+    border-radius: 2rem;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 0;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cookie-banner--visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.cookie-banner--hidden {
+    transform: translateX(-50%) translateY(140px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cookie-banner__accent {
+    height: 4px;
+    background: linear-gradient(90deg, #f5c842, #f59542, #f54242, #9b42f5, var(--color-primary));
+    background-size: 300% 100%;
+    animation: cookieGradient 4s linear infinite;
+}
+
+@keyframes cookieGradient {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 300% 50%; }
+}
+
+.cookie-banner__body {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 2rem 2.4rem 1.2rem;
+}
+
+.cookie-banner__icon {
+    font-size: 2.8rem;
+    flex-shrink: 0;
+    animation: cookieWobble 3s ease-in-out infinite;
+}
+
+@keyframes cookieWobble {
+    0%, 100% { transform: rotate(0deg); }
+    20%       { transform: rotate(-10deg); }
+    40%       { transform: rotate(10deg); }
+    60%       { transform: rotate(-5deg); }
+    80%       { transform: rotate(5deg); }
+}
+
+.cookie-banner__eyebrow {
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f5c842;
+    margin-bottom: 0.4rem;
+}
+
+.cookie-banner__headline {
+    font-size: 1.6rem;
+    font-weight: var(--fw-bold);
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+}
+
+.cookie-banner__sub {
+    font-size: 1.2rem;
+    color: #888;
+    line-height: 1.5;
+}
+
+.cookie-banner__sub strong {
+    color: #bbb;
+    font-weight: var(--fw-medium);
+}
+
+.cookie-banner__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2.4rem 2rem;
+}
+
+.cookie-banner__accept {
+    font-family: var(--font-family-primary);
+    font-size: 1.3rem;
+    font-weight: var(--fw-medium);
+    padding: 1rem 2.2rem;
+    border-radius: 1rem;
+    border: none;
+    background: #f5c842;
+    color: #0f0f0f;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease, transform 0.15s ease;
+    white-space: nowrap;
+}
+
+.cookie-banner__accept:hover {
+    background: #f7d466;
+    transform: translateY(-1px);
+}
+
+.cookie-banner__accept:active {
+    transform: scale(0.97);
+}
+
+.cookie-banner__decline {
+    font-family: var(--font-family-primary);
+    font-size: 1.3rem;
+    font-weight: var(--fw-regular);
+    padding: 1rem 1.8rem;
+    border-radius: 1rem;
+    border: 1px solid #2a2a2a;
+    background: transparent;
+    color: #666;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.cookie-banner__decline:hover {
+    background: #1e1e1e;
+    color: #999;
+}
+
+.dark-theme .cookie-banner {
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+} */
